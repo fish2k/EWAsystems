@@ -3,7 +3,20 @@ $(document).ready(() => {
 
     var homeSlider,
         homeSliderBlock = $("#homeslider"),
-        sliderShowMoreButton = $(".home-slider-more");
+        sliderShowMoreButton = $(".home-slider-more"),
+        burgerBtn = $(".header-burger"),
+        overlay = $(".overlay"),
+        body = $("body");
+
+    // МЕНЮ
+    burgerBtn.on("click", function () {
+        body.toggleClass("state-menu");
+    });
+
+    // общий оверлэй
+    overlay.on("click", function () {
+        body.removeClass("state-menu");
+    });
 
     // если слайдер имеется в DOM, то отрабатываем инициализацию
     if ( homeSliderBlock.eq(0).is(":visible") ) {

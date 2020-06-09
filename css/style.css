@@ -201,6 +201,8 @@ a:hover {
 
 .home-slider-photo {
     height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .row-slider,
@@ -1109,4 +1111,74 @@ a:hover {
 
 .footer-nav-link {
     line-height: 1.2;
+}
+
+.reponsive-items {
+    display: none;
+}
+
+.header-burger {
+    flex: 0 0 32px;
+    max-width: 32px;
+    height: 30px;
+
+    position: relative;
+
+    /* background-color: #f5f5f5; */
+    margin-left: 15px;
+}
+
+.burger-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: var(--ltblue);
+
+    border-radius: 4px;
+
+    transition: all .25s ease;
+}
+
+.line-1 {
+    top: 3px;
+}
+
+.line-2 {
+    top: 13px;
+}
+
+.line-3 {
+    top: 23px;
+}
+
+.state-menu .line-1 {
+    top: calc(50% - 2.5px);
+    transform: rotate(135deg);
+}
+
+.state-menu .line-2 {
+    opacity: 0;
+}
+
+.state-menu .line-3 {
+    top: calc(50% - 2.5px);
+    transform: rotate(-135deg);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 81px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0,0,0, .5);
+
+    z-index: 4;
+}
+
+.responsive-items {
+    display: none;
 }
