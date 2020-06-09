@@ -32,17 +32,18 @@ $(document).ready(() => {
     productSlider = new Swiper(".slider-products", {
         slidesPerView: 4,
         spaceBetween: 30,
+        loop: true,
 
         navigation: {
-            prevEl: ".slider-products-prev",
-            nextEl: ".slider-products-next"
+            prevEl: ".product-slider-prev",
+            nextEl: ".product-slider-next"
         }
     });
 
     partnersSlider = new Swiper(".slider-partners", {
         slidesPerView: 6,
         loop: false
-    })
+    });
 
     // тултип на описание товара
     $(".product-item-info").each(function () {
