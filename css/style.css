@@ -376,7 +376,7 @@ a:hover {
 .products-block-flex {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .products-image-abs {
@@ -456,6 +456,10 @@ a:hover {
 
 .products-cats-link + span {
     font-size: 14px;
+}
+
+.products-cats-link b {
+    font-weight: 500;
 }
 
 .products-col-right-col {
