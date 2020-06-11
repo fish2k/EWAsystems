@@ -15,7 +15,7 @@
 }
 
 :focus {
-    outline: none
+    outline: none !important;
 }
 
 img {
@@ -1214,4 +1214,70 @@ a:hover {
 
 .responsive-items {
     display: none;
+}
+
+.page-bc {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.page-bc-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-bc-link {
+    font-size: 14px;
+    margin-right: 42px;
+
+    color: var(--gray-text);
+
+    position: relative;
+}
+
+.page-bc-link:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: -25px;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #d7d7d7;
+
+    transform: rotate(45deg);
+}
+
+.page-bc-link:hover {
+    color: var(--gray-text);
+}
+
+.catalog-sort-select {
+    border: 1px solid var(--accent);
+    height: 50px;
+    border-radius: 30px;
+
+    padding-right: 116px;
+    padding-left: 29px;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    font-weight: 500;
+    font-size: 18px;
+
+    color: var(--accent);
+
+    background-image: url(../images/catalog-sort-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 94% 52%;
+}
+
+.catalog-sort-select option {
+    padding: 0;
+}
+
+.catalog-list {
+    margin-top: 40px;
 }
