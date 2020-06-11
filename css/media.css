@@ -5,6 +5,14 @@
 }
 
 @media(max-width: 1500px) {
+    .consult-heading {
+        line-height: 1;
+    }
+
+    .col-about {
+        padding-left: 15px;
+    }
+
     .products-title {
         font-size: 35px;
     }
@@ -107,6 +115,30 @@
 }
 
 @media (max-width: 1200px) {
+    .consult-heading {
+        font-size: 32px;
+    }
+
+    .consult-content {
+        padding-right: 340px;
+    }
+
+    .consult-desc {
+        font-size: 14px;
+    }
+
+    .consult-men {
+        right: 15px;
+    }
+
+    .product-item-photo {
+        background-size: auto 60%;
+    }
+
+    .section-about {
+        font-size: 14px;
+    }
+
     .products-list-name {
         height: 46px;
         font-size: 15px;
@@ -214,6 +246,114 @@
         display: block;
     }
     /* overlay masks */
+
+    .col-footer {
+        padding-top: 30px;
+    }
+
+    .footer-nav {
+        margin-top: 15px;
+    }
+
+    .row-services {
+        margin-top: 30px;
+    }
+
+    .section-recomms {
+        margin-top: 50px;
+    }
+
+    .slider-right-content::before {
+        display: none;
+    }
+
+    .section-products {
+        margin-top: 30px;
+    }
+
+    .service-item-body {
+        padding-left: 15px;
+    }
+
+    .service-item-name {
+        font-size: 16px;
+    }
+
+    .service-item-text {
+        font-size: 13px;
+    }
+
+    .about-image {
+        max-width: 350px;
+        margin-bottom: 25px;
+    }
+
+    .section-about {
+        margin-top: 0;
+    }
+
+    .about-content {
+        margin-top: 25px;
+    }
+
+    .products-block-custom {
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-top: -30px;
+    }
+
+    .col-about {
+        margin-top: 50px;
+    }
+
+    .about-list {
+        margin-top: 15px;
+    }
+
+    .section-btns {
+        margin-top: 15px;
+    }
+
+    .product-item-prices .newprice {
+        font-size: 16px;
+    }
+
+    .product-item-prices .oldprice {
+        font-size: 12px;
+    }
+
+    .product-item-buy {
+        font-size: 14px;
+    }
+
+    .product-item-actions {
+        padding: 15px 15px 20px;
+    }
+
+    .product-tooltip {
+        font-size: 12px;
+
+        padding: 10px;
+    }
+
+    .tooltip-info {
+        bottom: 90px;
+
+        left: 10px;
+        right: 10px;
+    }
+
+    .tooltip-info::before {
+        right: 20px;
+    }
+
+    .product-item-name {
+        height: 38px;
+        font-size: 14px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     .products-list::before {
         display: none;
@@ -390,6 +530,63 @@
 }
 
 @media (max-width: 767px) {
+    .section-heading {
+        line-height: 1;
+        font-size: 20px;
+    }
+
+    .col-footer {
+        padding-top: 15px;
+    }
+
+    .footer-logo-src {
+        max-width: 260px;
+    }
+
+    .section-consult {
+        margin-top: 0;
+    }
+
+    .consult-heading {
+        font-size: 16px;
+    }
+
+    .consult-desc {
+        font-size: 13px;
+    }
+
+    .consult-content {
+        padding-top: 120px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+
+        border-radius: 30px;
+
+        background-size: auto 260px;
+        background-position: center bottom;
+
+        padding-right: 160px;
+    }
+
+    .consult-men {
+        right: 20px;
+        max-width: 120px;
+    }
+
+    .section-head {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .slider-products-controls {
+        justify-content: flex-end;
+    }
+
+    .slider-recomms {
+        margin-top: 0;
+    }
+
     .products-block {
         padding: 20px 15px;
     }
@@ -429,9 +626,119 @@
     .products-block-custom .products-title {
         padding: 0 0 30px 0;
     }
+
+    .section-partners {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .section-services {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 480px) {
+    .footer-nav-item {
+        margin-bottom: 10px;
+    }
+
+    .footer-nav-link {
+        font-size: 12px;
+    }
+
+    .service-item-name {
+        font-size: 13px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    .service-item-text {
+        font-size: 12px;
+    }
+
+    .service-item-icon {
+        flex: 0 0 50px;
+        max-width: 50px;
+    }
+
+    .service-item-body {
+        flex: 0 0 calc(100% - 50px);
+        max-width: calc(100% - 50px);
+    }
+
+    .about-title {
+        font-size: 20px;
+    }
+
+    .subheading {
+        font-size: 12px;
+    }
+
+    .footer {
+        font-size: 13px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .products-block-custom .products-head {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .section-about {
+        font-size: 13px;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .products-list-image {
+        height: 59px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .products-list-name {
+        margin-top: 10px;
+        height: 46px;
+        font-size: 11px;
+        font-weight: 500;
+        word-break: break-word;
+    }
+    
+    .products-cats-link,
+    .products-cats-name {
+        font-size: 13px;
+    }
+
+    .products-cats-link + span {
+        font-size: 11px;
+    }
+    
+    .product-item-photo {
+        padding-bottom: 240px;
+    }
+
+    .section-btns .button-default {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .consult-men {
+        display: none;
+    }
+
+    .consult-content {
+        padding-right: 15px;
+    }
+
     .products-block-index-2, .products-block-index-3 {
         margin-left: -20px;
         padding-top: 0;
@@ -442,8 +749,10 @@
     }
 
     .products-list-item {
-        flex: 0 0 100%;
-        max-width: 100%;
+        padding-left: 34px;
+        padding-right: 0;
+        text-align: left;
+        flex-direction: row;
     }
 
     .products-heading {
@@ -451,7 +760,7 @@
     }
 
     .products-title {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .products-image-abs {
@@ -460,7 +769,7 @@
         right: 15px;
         bottom: 15px;
 
-        max-width: 85px;
+        max-width: 77px;
     }
 
     .products-cats-title {

@@ -43,19 +43,63 @@ $(document).ready(() => {
         partnersSlider;
 
     productSlider = new Swiper(".slider-products", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
+        loop: false,
 
         navigation: {
             prevEl: ".product-slider-prev",
             nextEl: ".product-slider-next"
+        },
+
+        breakpoints: {
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 0
+            },
+
+            480: {
+                slidesPerView: 2,
+            },
+
+            320: {
+                slidesPerView: 1
+            }
         }
     });
 
     partnersSlider = new Swiper(".slider-partners", {
         slidesPerView: 6,
-        loop: false
+        loop: false,
+
+        autoplay: {
+            delay: 3000
+        },
+
+        breakpoints: {
+            1200: {
+                slidesPerView: 6
+            },
+
+            991: {
+                slidesPerView: 4
+            },
+
+            768: {
+                slidesPerView: 3
+            },
+
+            480: {
+                slidesPerView: 2
+            },
+
+            320: {
+                slidesPerView: 1
+            }
+        }
     });
 
     // тултип на описание товара
