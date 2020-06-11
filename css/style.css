@@ -43,6 +43,13 @@ a:hover {
     color: #fff;
 }
 
+.header {
+    background-color: #fff;
+    box-shadow: 0px 0px 35px 0px rgba(107, 153, 186, .1);
+    position: relative;
+    z-index: 2;
+}
+
 .header-top {
     border-bottom: 1px solid #cacaca;
     padding: 17px 0 9px;
@@ -562,6 +569,7 @@ a:hover {
     font-weight: normal;
     color: var(--accent);
     margin-bottom: 15px;
+    line-height: 1.2;
 }
 
 .subheading {
@@ -1280,4 +1288,178 @@ a:hover {
 
 .catalog-list {
     margin-top: 40px;
+}
+
+.catalog-product-item .product-item-actions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    box-shadow: 0 0 0 0 rgba(0,0,0, .0);
+
+    background-color: #fff;
+}
+
+.catalog-product-item {
+    margin-bottom: 56px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.catalog-product-item:hover .product-item-actions,
+.catalog-product-item.hover .product-item-actions {
+    opacity: 1;
+    height: 99px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    box-shadow: 0 30px 30px 0 rgba(0,0,0, .05);
+}
+
+.catalog-product-item .tooltip-info {
+    bottom: 0;
+}
+
+.catalog-zapis-item {
+    text-align: center;
+    height: calc(100% - 31px);
+
+    background-image: url(../images/catalog-zapis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 15px;
+
+    padding: 39px 25px;
+
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.zapis-title {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.zapis-icon {
+    max-width: 100px;
+
+    margin-bottom: 25px
+}
+
+.zapis-desc {
+    margin-top: 13px;
+    line-height: 1.19;
+    margin-bottom: 31px;
+}
+
+.zapis-button {
+    margin-left: auto;
+    margin-right: auto;
+
+    border-color: #fff;
+    color: var(--ltblue)
+}
+
+.btns-middle {
+    justify-content: center;
+}
+
+.catalog-more {
+    margin-top: 15px;
+    margin-bottom: -6px;
+    display: flex;
+    justify-content: center;
+}
+
+.row-podbor {
+    margin-top: 17px;
+}
+
+.about-podbor {
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.about-podbor-link {
+    display: table;
+    margin-bottom: 17px;
+}
+
+.section-about-catalog {
+    padding-bottom: 50px;
+}
+
+.catalog-layout {
+    background-image: url(../images/catalog-bg.jpg);
+    background-position: center top;
+    background-size: cover;
+    border-top: .3px solid transparent;
+    border-bottom: .3px solid transparent;
+}
+
+.catalog-cats .products-block {
+    padding: 0px 0px 0px 0px;
+    margin-top: 66px;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.catalog-cats .products-col-right-col:nth-child(1) {
+    padding-top: 0;
+}
+
+.catalog-cats .products-col-left {
+    flex: 0 0 25.5%;
+    max-width: 25.5%;
+}
+
+.catalog-cats .products-col-right {
+    flex: 0 0 74.5%;
+    max-width: 74.5%;
+}
+
+.catalog-cats .products-col-right-col {
+    flex: 0 0 46%;
+    max-width: 46%;
+}
+
+.catalog-cats .products-col-left-col {
+    flex: 0 0 54%;
+    max-width: 54%;
+}
+
+.catalog-cats .products-image-abs {
+    bottom: auto;
+    top: 25px;
+    left: 0;
+}
+
+.catalog-cats {
+    margin-bottom: 7px;
+}
+
+.catalog-product-item {
+    background-color: transparent;
+}
+
+.catalog-product-item.hover,
+.catalog-product-item:hover {
+    background-color: #fff;
+}
+
+.catalog-layout .catalog-list {
+    margin-top: 25px;
 }
