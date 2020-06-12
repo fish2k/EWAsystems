@@ -127,13 +127,43 @@ $(document).ready(() => {
         
         $(this).hover(
             function () {
-                getCurrentParent.find(".product-tooltip").remove();
-                getCurrentParent.append(`<div class="product-tooltip tooltip-small">${getTextData}</div>`);
+                if (typeof getCurrentIndex == "undefined") {
+                    $(".detail-bubbles").find(".product-tooltip").remove();
+                    $(".detail-bubbles").append(`<div class="product-tooltip tooltip-small">${getTextData}</div>`);
+                } else {
+                    getCurrentParent.find(".product-tooltip").remove();
+                    getCurrentParent.append(`<div class="product-tooltip tooltip-small">${getTextData}</div>`);
+                }
             },
             function () {
+                $(".detail-bubbles").find(".product-tooltip").remove();
                 getCurrentParent.find(".product-tooltip").remove();
             }
         )
-    })
+    });
+
+    var detailSlider,
+        detailSliderThumbs,
+        detailSliderID = $("#detailSlider");
+
+    if ( detailSliderID.eq(0).is(":visible") ) {
+        detailSlider = new Swiper(".detail-slider", {
+            slidesPerView: 1,
+            loop: true,
+            loopedSlides: 5
+        });
+
+        detailSliderThumbs = new Swiper(".detail-slider-thumbs", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            slideToClickedSlide: true,
+            touchRatio: 0.2,
+            cssMode: true
+        });
+
+        detailSlider.controller.control = detailSliderThumbs;
+        detailSliderThumbs.controller.control = detailSlider;
+    }
 
 });
