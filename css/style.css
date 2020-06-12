@@ -47,7 +47,7 @@ a:hover {
     background-color: #fff;
     box-shadow: 0px 0px 35px 0px rgba(107, 153, 186, .1);
     position: relative;
-    z-index: 2;
+    z-index: 5;
 }
 
 .header-top {
@@ -1243,7 +1243,7 @@ a:hover {
     position: relative;
 }
 
-.page-bc-link:not(:last-child)::after {
+.page-bc-link::after {
     position: absolute;
     content: "";
     top: 6px;
@@ -1255,6 +1255,10 @@ a:hover {
     background-color: #d7d7d7;
 
     transform: rotate(45deg);
+}
+
+.page-bc-link:last-child::after {
+    display: none;
 }
 
 .page-bc-link:hover {
@@ -1406,6 +1410,7 @@ a:hover {
     background-image: url(../images/catalog-bg.jpg);
     background-position: center top;
     background-size: cover;
+    background-repeat: no-repeat;
     border-top: .3px solid transparent;
     border-bottom: .3px solid transparent;
 }
@@ -1698,8 +1703,8 @@ a:hover {
 }
 
 .detail-specs-row {
-    border-bottom: 1px solid #c1c1c1;
-    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
     margin-bottom: -1px;
 
     display: flex;

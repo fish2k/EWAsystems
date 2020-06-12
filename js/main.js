@@ -154,12 +154,25 @@ $(document).ready(() => {
         });
 
         detailSliderThumbs = new Swiper(".detail-slider-thumbs", {
-            slidesPerView: 5,
-            spaceBetween: 30,
             loop: true,
             slideToClickedSlide: true,
             touchRatio: 0.2,
-            cssMode: true
+            cssMode: true,
+
+            breakpoints: {
+                1200: {
+                    spaceBetween: 30
+                },
+
+                990: {
+                    slidesPerView: 5
+                },
+
+                320: {
+                    slidesPerView: 4,
+                    spaceBetween: 15
+                }
+            }
         });
 
         detailSlider.controller.control = detailSliderThumbs;
