@@ -1759,3 +1759,124 @@ a:hover {
     background-position: right 7px;
     background-repeat: no-repeat;
 }
+
+/* .modal-custom {
+    padding-right: 0 !important;
+} */
+
+.modal-dialog-custom {
+    max-width: 720px;
+}
+
+.modal-content-custom {
+    background-color: #fff;
+    padding: 43px 50px;
+    border-radius: 50px;
+    line-height: 1.2;
+    position: relative;
+    pointer-events: auto;
+    width: 100%;
+}
+
+.modal-custom-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-custom-title {
+    color: var(--accent);
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.modal-custom-close {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    cursor: pointer;
+
+    filter: grayscale(100%);
+    opacity: 0.3;
+
+    transition: all .2s ease;
+    z-index: 2;
+}
+
+.modal-custom-close:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+
+    cursor: pointer;
+}
+
+.modal-custom-subtitle {
+    position: relative;
+    color: var(--gray-text)
+}
+
+.modal-custom-subtitle::before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    bottom: 4px;
+    width: 40px;
+    right: calc(100% + 10px);
+
+    background-color: #c1c1c1;
+}
+
+.modal-form-wrap {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal-form-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-label {
+    margin: 0 0 29px 0;
+    padding: 0;
+}
+
+.modal-custom-body {
+    padding-top: 40px;
+}
+
+.modal-form-input {
+    border: 2px solid #c1c1c1;
+    padding: 14px 28px 12px;
+    border-radius: 30px;
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--accent)
+}
+
+.modal-form-input:focus {
+    border-color: var(--accent);
+}
+
+.modal-form-input::placeholder {
+    color: #aaaaaa;
+}
+
+.modal-form-button {
+    width: 100%;
+}
+
+.modal-form-agree {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -3px;
+
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--gray-text)
+}

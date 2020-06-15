@@ -127,6 +127,24 @@
 }
 
 @media (max-width: 1200px) {
+    .modal-form-input {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .modal-form-agree {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .modal-custom-subtitle {
+        font-size: 14px;
+    }
+
+    .modal-form-label {
+        margin-bottom: 15px;
+    }
+
     .detail-osob-item {
         padding-left: 15px;
         margin-bottom: 5px;
@@ -910,12 +928,44 @@
     .section-services {
         margin-top: 0;
     }
+
+    .modal-dialog-custom {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .modal-content-custom {
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .modal-custom-title {
+        font-size: 20px;
+    }
+
+    .modal-custom-subtitle {
+        font-size: 13px;
+    }
+
+    .modal-custom-close {
+        top: 30px;
+        right: 30px;
+    }
+
+    .modal-custom-head {
+        padding-right: 45px;
+    }
 }
 
 @media (max-width: 480px) {
+    .modal-custom-subtitle,
+    .modal-form-agree {
+        font-size: 12px;
+    }
+
     .button-default {
         height: 38px !important;
-        line-height: 38px !important;
+        line-height: 33px !important;
     }
 
     .slider-history {
