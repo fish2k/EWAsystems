@@ -61,12 +61,8 @@ $(document).ready(() => {
                 spaceBetween: 0
             },
 
-            480: {
-                slidesPerView: 2,
-            },
-
             320: {
-                slidesPerView: 1
+                slidesPerView: 2
             }
         }
     });
@@ -92,12 +88,8 @@ $(document).ready(() => {
                 slidesPerView: 3
             },
 
-            480: {
-                slidesPerView: 2
-            },
-
             320: {
-                slidesPerView: 1
+                slidesPerView: 2
             }
         }
     });
