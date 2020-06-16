@@ -139,17 +139,10 @@ $(document).ready(() => {
         detailSliderID = $("#detailSlider");
 
     if ( detailSliderID.eq(0).is(":visible") ) {
-        detailSlider = new Swiper(".detail-slider", {
-            slidesPerView: 1,
-            loop: true,
-            loopedSlides: 5
-        });
-
         detailSliderThumbs = new Swiper(".detail-slider-thumbs", {
-            loop: true,
-            slideToClickedSlide: true,
-            touchRatio: 0.2,
-            cssMode: true,
+            slidesPerView: 5,
+            spaceBetween: 30,
+            freeMode: true,
 
             breakpoints: {
                 1200: {
@@ -167,8 +160,16 @@ $(document).ready(() => {
             }
         });
 
-        detailSlider.controller.control = detailSliderThumbs;
-        detailSliderThumbs.controller.control = detailSlider;
+        detailSlider = new Swiper(".detail-slider", {
+            slidesPerView: 1,
+
+            thumbs: {
+                swiper: detailSliderThumbs
+            }
+        });
+
+        // detailSlider.controller.control = detailSliderThumbs;
+        // detailSliderThumbs.controller.control = detailSlider;
     }
 
     var faqItem = $(".faq-list-item");
@@ -182,5 +183,10 @@ $(document).ready(() => {
         th.toggleClass("active");
         $(".faq-list-item-body").slideUp();
         body.stop().slideToggle();
-    })
+    });
+
+    // чистим форму во всех модалках
+    $(".modal").on("hide.bs.modal", function () {
+        $(this).find("form").get(0).reset();
+    });
 });

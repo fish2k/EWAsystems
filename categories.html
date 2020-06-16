@@ -197,7 +197,7 @@
                                 органолептические свойства.
                             </div>
 
-                            <a href="javascript:void(0)" class="button-default zapis-button">Записаться</a>
+                            <a href="javascript:void(0)" class="button-default zapis-button" data-toggle="modal" data-target="#freeAnalyzeModal">Записаться</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-product-item">
@@ -470,7 +470,7 @@
                     </div>
 
                     <div class="section-btns">
-                        <a href="javascript:void(0)" class="button-default button-active">Консультация</a>
+                        <a href="javascript:void(0)" class="button-default button-active" data-toggle="modal" data-target="#consultModal">Консультация</a>
                         <a href="javascript:void(0)" class="button-default button-border">Об анализе и подборе</a>
                     </div>
                 </div>
@@ -582,7 +582,7 @@
                     системы фильтрации для квартиры или дома.
                 </div>
 
-                <a href="javascript:void(0)" class="button-default button-active consult-btn">Получить</a>
+                <a href="javascript:void(0)" class="button-default button-active consult-btn" data-toggle="modal" data-target="#consultModal">Получить</a>
 
                 <img src="images/consult-men.png" alt="" class="consult-men">
             </div>
@@ -687,6 +687,82 @@
     </div>
 
     <div class="overlay"></div>
+
+    <!-- Modal бесплатный анализ -->
+    <div class="modal modal-custom fade" id="freeAnalyzeModal" tabindex="-1" role="dialog" aria-labelledby="freeAnalyzeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-custom modal-dialog-centered" role="document">
+            <div class="modal-content-custom">
+                <div class="modal-custom-head">
+                    <div class="modal-custom-title">Бесплатный анализ воды</div>
+                    <div class="modal-custom-subtitle">
+                        Анализ включает в себя определение концентрации  железа и 
+                        марганца, кислотность (рН), общую  жесткость, перманганатную 
+                        окисляемость, органолептические свойства.
+                    </div>
+                    <a href="javascript:void(0)" class="modal-custom-close" data-dismiss="modal">
+                        <img src="images/modal-close.svg" alt="">
+                    </a>
+                </div>
+                <div class="modal-custom-body">
+                    <div class="modal-form-wrap">
+                        <form class="modal-form-block">
+                            <label class="modal-form-label">
+                                <input type="text" class="modal-form-input" placeholder="Ваше имя">
+                            </label>
+                            <label class="modal-form-label">
+                                <input type="text" class="modal-form-input" placeholder="Телефон">
+                            </label>
+                            <div class="modal-form-label">
+                                <button class="modal-form-button button-default button-active" type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-form-agree">
+                        Нажав на кнопку “Отправить”, вы даете согласие <br>
+                        на обработку персональных данных.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal консультация -->
+    <div class="modal modal-custom fade" id="consultModal" tabindex="-1" role="dialog" aria-labelledby="consultModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-custom modal-dialog-centered" role="document">
+            <div class="modal-content-custom">
+                <div class="modal-custom-head">
+                    <div class="modal-custom-title">Консультация</div>
+                    <div class="modal-custom-subtitle">
+                        Квалифицированная помощь специалиста EWA systems
+                    </div>
+                    <a href="javascript:void(0)" class="modal-custom-close" data-dismiss="modal">
+                        <img src="images/modal-close.svg" alt="">
+                    </a>
+                </div>
+                <div class="modal-custom-body">
+                    <div class="modal-form-wrap">
+                        <form class="modal-form-block">
+                            <label class="modal-form-label">
+                                <input type="text" class="modal-form-input" placeholder="Ваше имя">
+                            </label>
+                            <label class="modal-form-label">
+                                <input type="text" class="modal-form-input" placeholder="Телефон">
+                            </label>
+                            <div class="modal-form-label">
+                                <button class="modal-form-button button-default button-active" type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-form-agree">
+                        Нажав на кнопку “Отправить”, вы даете согласие <br>
+                        на обработку персональных данных.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- custom scripts -->
     <script src="js/main.js"></script>

@@ -1281,6 +1281,7 @@ a:hover {
 
     color: var(--accent);
 
+    background-color: #fff;
     background-image: url(../images/catalog-sort-arrow.svg);
     background-repeat: no-repeat;
     background-position: 94% 52%;
@@ -1533,7 +1534,7 @@ a:hover {
     background-color: var(--accent);
 }
 
-.detail-slide-thumb-item.swiper-slide-active::before {
+.detail-slide-thumb-item.swiper-slide-thumb-active::before {
     position: absolute;
     content: '';
     left: 0;

@@ -745,6 +745,21 @@
 }
 
 @media (max-width: 767px) {
+    .faq-list-item::before {
+        top: 16px;
+        right: 19px;
+    }
+
+    .faq-list-item {
+        padding: 13px 15px 0 15px;
+        font-size: 16px;
+    }
+
+    .faq-list-item-head {
+        padding-bottom: 13px;
+        padding-right: 30px;
+    }
+
     .about-list-desc {
         font-size: 13px;
     }
@@ -1071,6 +1086,34 @@
 }
 
 @media (max-width: 480px) {
+    .service-item {
+        margin-bottom: 15px;
+    }
+
+    .modal-content-custom {
+        border-radius: 0;
+        padding: 15px;
+    }
+    
+    .modal-custom-head {
+        padding-right: 30px;
+    }
+
+    .modal-custom-body {
+        padding-top: 15px;
+    }
+
+    .modal-custom-close {
+        top: 15px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .modal-custom-subtitle::before {
+        display: none;
+    }
+
     .contacts-form-title {
         font-size: 19px;
     }
@@ -1088,13 +1131,7 @@
     }
 
     .col-product-zapis {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding-bottom: 15px;
-    }
-
-    .col-product-zapis ~ .col-product-item {
-        opacity: 0.3
+        display: none;
     }
 
     .product-item {
@@ -1106,7 +1143,11 @@
     }
 
     .catalog-list .product-item-bubble {
-        top: 0;
+        top: 15px;
+    }
+
+    .tooltip-small {
+        top: 66px;
     }
 
     .catalog-list .product-item-actions {
@@ -1185,9 +1226,17 @@
         max-width: 100px;
     }
 
-    .modal-custom-subtitle,
-    .modal-form-agree {
+    .modal-custom-title {
+        font-size: 17px;
+    }
+
+    .modal-custom-subtitle {
         font-size: 12px;
+    }
+
+    .modal-form-agree {
+        font-size: 11px;
+        margin-top: 0;
     }
 
     .button-default {
@@ -1219,7 +1268,6 @@
         padding-left: 0;
         padding-right: 0;
         padding-top: 0;
-        margin-top: 0;
     }
 
     .tooltip-small {
@@ -1227,7 +1275,7 @@
     }
 
     .tooltip-small::before {
-        left: 48%;
+        left: 33%;
     }
 
     .about-podbor {
@@ -1261,11 +1309,11 @@
     }
 
     .catalog-list .product-item {
-        margin-bottom: 15px;
+        margin-bottom: 0;
     }
 
     .catalog-list {
-        margin-top: 0;
+        margin-top: 30px;
     }
 
     .page-bc-list {

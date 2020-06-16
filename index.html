@@ -126,7 +126,7 @@
                                             окисляемость, органолептические свойства.
                                         </div>
 
-                                        <a href="javascript:void(0)" class="button-default slider-btn">Записаться</a>
+                                        <a href="javascript:void(0)" class="button-default slider-btn" data-toggle="modal" data-target="#freeAnalyzeModal">Записаться</a>
                                     </div>
                                 </div>
                             </div>
@@ -409,7 +409,7 @@
                     </div>
 
                     <div class="section-btns">
-                        <a href="javascript:void(0)" class="button-default button-active">Консультация</a>
+                        <a href="javascript:void(0)" class="button-default button-active" data-toggle="modal" data-target="#consultModal">Консультация</a>
                         <a href="javascript:void(0)" class="button-default button-border">Об анализе и подборе</a>
                     </div>
                 </div>
@@ -631,7 +631,7 @@
                     системы фильтрации для квартиры или дома.
                 </div>
 
-                <a href="javascript:void(0)" class="button-default button-active consult-btn">Получить</a>
+                <a href="javascript:void(0)" class="button-default button-active consult-btn" data-toggle="modal" data-target="#consultModal">Получить</a>
 
                 <img src="images/consult-men.png" alt="" class="consult-men">
             </div>
@@ -737,7 +737,7 @@
 
     <div class="overlay"></div>
 
-    <!-- Modal анализ -->
+    <!-- Modal бесплатный анализ -->
     <div class="modal modal-custom fade" id="freeAnalyzeModal" tabindex="-1" role="dialog" aria-labelledby="freeAnalyzeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-custom modal-dialog-centered" role="document">
             <div class="modal-content-custom">
@@ -812,10 +812,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <script>
-        $("#freeAnalyzeModal").modal("show");
-    </script> -->
 
     <!-- custom scripts -->
     <script src="js/main.js"></script>
