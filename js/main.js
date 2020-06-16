@@ -171,4 +171,16 @@ $(document).ready(() => {
         detailSliderThumbs.controller.control = detailSlider;
     }
 
+    var faqItem = $(".faq-list-item");
+
+    // faq итемы, аля аккордион костыльный
+    faqItem.on("click", function () {
+        var th = $(this),
+            body = th.find(".faq-list-item-body");
+
+        faqItem.removeClass("active");
+        th.toggleClass("active");
+        $(".faq-list-item-body").slideUp();
+        body.stop().slideToggle();
+    })
 });

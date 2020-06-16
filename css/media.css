@@ -5,6 +5,15 @@
 }
 
 @media(max-width: 1500px) {
+    .about-image-center {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .about-image-src {
+        max-width: 100%;
+    }
+
     .detail-full-sticky {
         height: auto;
     }
@@ -127,6 +136,10 @@
 }
 
 @media (max-width: 1200px) {
+    .footer-nav-item {
+        word-break: break-all;
+    }
+
     .modal-form-input {
         padding: 10px 20px;
         font-size: 14px;
@@ -334,6 +347,10 @@
         line-height: 35px;
     }
 
+    /* .contacts-form-button {
+        height: 50px;
+    } */
+
     .home-slider {
         height: 400px;
     }
@@ -350,6 +367,10 @@
         line-height: 1;
         font-size: 20px;
     }
+
+    .contacts-form-style[type="text"] {
+        height: 40px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -362,6 +383,10 @@
         display: block;
     }
     /* overlay masks */
+
+    .contacts-form-style {
+        border-radius: 20px;
+    }
 
     .detail-full-content {
         flex: 0 0 calc(100% - 300px);
@@ -720,6 +745,80 @@
 }
 
 @media (max-width: 767px) {
+    .about-list-desc {
+        font-size: 13px;
+    }
+
+    .about-image-center {
+        margin-top: 0;
+    }
+
+    .about-image-src {
+        max-width: 280px;
+    }
+
+    .about-page-content {
+        font-size: 14px;
+    }
+
+    .contacts-form-style {
+        font-size: 15px;
+    }
+
+    .contacts-form-style[type="text"] {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    textarea.contacts-form-style {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contacts-form-agree {
+        font-size: 13px;
+    }
+
+    .contacts-form {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    .contacts-form-title {
+        margin-bottom: 15px;
+    }
+
+    .page-layout-inner {
+        border-radius: 0;
+        padding: 15px;
+
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .contacts-form-action {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contacts-map {
+        border-radius: 0;
+        height: 300px;
+    }
+
+    .contacts-form-row.row {
+        margin-bottom: 0;
+    }
+
+    .contacts-form-row {
+        margin-bottom: 15px;
+    }
+
+    .col-form {
+        margin-bottom: 15px;
+    }
+
     .col-product-item {
         flex: 0 0 50%;
         max-width: 50%;
@@ -972,6 +1071,22 @@
 }
 
 @media (max-width: 480px) {
+    .contacts-form-title {
+        font-size: 19px;
+    }
+
+    .contacts-list-item-body {
+        font-size: 14px;
+    }
+
+    .contacts-form-agree {
+        font-size: 11px;
+    }
+
+    .contacts-form-style {
+        font-size: 13px;
+    }
+
     .col-product-zapis {
         flex: 0 0 100%;
         max-width: 100%;

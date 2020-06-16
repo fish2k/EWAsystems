@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EWA water system</title>
+
+    <!-- additional styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- common styles -->
+    <link rel="stylesheet" href="fonts/stolzl/stolzl.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row-header-top">
+                    <div class="header-top-list">
+                        <a href="javascript:void(0)" class="header-top-link">О компании</a>
+                        <a href="javascript:void(0)" class="header-top-link">Услуги</a>
+                        <a href="javascript:void(0)" class="header-top-link">Доставка и оплата</a>
+                        <a href="javascript:void(0)" class="header-top-link">Гарантия</a>
+                        <a href="javascript:void(0)" class="header-top-link">Вопросы и ответы</a>
+                        <a href="javascript:void(0)" class="header-top-link">Контакты</a>
+                    </div>
+    
+                    <div class="header-contacts">
+                        <a href="javascript:void(0)" class="header-contacts-item header-city">
+                            Альметьевск
+                        </a>
+                        <a href="tel:88005118289" class="header-contacts-item header-phone">
+                            8 800 511 82-89
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="row-header-main">
+                    <a href="/" class="header-logo">
+                        <img src="images/ewa-logo.svg" alt="EWA water system" class="header-logo-src">
+                    </a>
+
+                    <div class="header-main-list">
+                        <a href="javascript:void(0)" class="header-main-link">Для дома</a>
+                        <a href="javascript:void(0)" class="header-main-link">Для квартиры</a>
+                        <a href="javascript:void(0)" class="header-main-link">Обратный осмос</a>
+                        <a href="javascript:void(0)" class="header-main-link">Фильтрующие материалы</a>
+                        <a href="javascript:void(0)" class="header-main-link">Сопутствующие товары</a>
+                    </div>
+
+                    <!--
+                        Если в корзине нету товаров, то убираем класс cart-has-items
+                        и в header-cart-title ставим статичный текст "Корзина"
+                        блок header-cart-total может быть пустым,
+                        он всё равнон будет в display: none
+                    -->
+                    <a href="javascript:void(0)" class="header-cart cart-has-items">
+                        <div class="header-cart-icon">
+                            <img src="images/header-cart.svg" alt="Корзина">
+                        </div>
+                        <div class="header-cart-body">
+                            <div class="header-cart-title">15 товаров</div>
+                            <div class="header-cart-total">29 500 руб.</div>
+                        </div>
+                    </a>
+
+                    <div class="responsive-items">
+                        <a class="responsive-item header-cart-responsive" href="javascript:void(0)">
+                            <img src="images/header-cart.svg" alt="">
+                        </a>
+
+                        <div class="responsive-item header-burger">
+                            <span class="burger-line line-1"></span>
+                            <span class="burger-line line-2"></span>
+                            <span class="burger-line line-3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-layout">
+        <div class="page-bc">
+            <div class="container">
+                <div class="page-bc-list">
+                    <a href="javascript:void(0)" class="page-bc-link">Главная</a>
+                    <a href="javascript:void(0)" class="page-bc-link">О компании</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section-head">
+                <div class="section-heading">
+                    О компании
+                </div>
+            </div>
+
+            <div class="page-layout-inner">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="about-page-content">
+                            <p>В нашем мире с развитием технологий и истощением ресурсов, люди в современном мире 
+                            все больше зависят от условий окружающей среды. В частности, от качества потребляемой 
+                            воды которую мы ежедневно используем для хозяйственно-бытового и питьевого 
+                            применения.</p>
+                            
+                            <p>Цель нашей компании – внедрение и распространение систем очистки воды для улучшения 
+                            качества жизни и здоровья человека, по доступной цене.
+                            Компания EWA sistems комплексно подходит к водоподготовке и очистки воды для 
+                            промышленного, хозяйственно-бытового и питьевого применения.</p> 
+                            
+                            <p>Наши консультанты постоянно проходят обучение и изучают новые технологии, готовы 
+                            оказать профессиональную консультацию. А также осуществляем выезд на объект или дом, 
+                            для забора воды и подтверждения качества в лабораторных исследованиях и выбора 
+                            оптимального метода фильтрации.</p>
+                            
+                            <p></p>Мы осуществляем грамотный подбор фильтров и установок водоочистки, исходя из 
+                            потребностей клиента и лабораторных результатов.Наши высококвалифицированные 
+                            специалисты произведут монтаж оборудования, пуско-наладку, проверку системы в рабочем 
+                            режиме.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="about-image-center">
+                            <img class="about-image-src" src="images/about-image.svg" alt="О компании">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="about-services">
+                            <div class="section-heading heading-small">Бесплатный сервис</div>
+
+                            <div class="about-services-list">
+                                <div class="about-list-item">
+                                    <div class="about-list-head">
+                                        <div class="about-list-count"><span>1</span></div>
+                                        <div class="about-list-name">Анализ воды</div>
+                                    </div>
+                                    <div class="about-list-desc">
+                                        Бесплатно сделаем анализ вашей воды на её химическй состав. Только 
+                                        паравильно подобранная система очистки воды принесет пользу.
+                                    </div>
+                                </div>
+                                <div class="about-list-item">
+                                    <div class="about-list-head">
+                                        <div class="about-list-count"><span>2</span></div>
+                                        <div class="about-list-name">Осмотр</div>
+                                    </div>
+                                    <div class="about-list-desc">
+                                        Проведем предварительный осмотр, чтобы выбрать практичное для вас 
+                                        место установки фильтра для воды и учесть все особенности.
+                                    </div>
+                                </div>
+                                <div class="about-list-item">
+                                    <div class="about-list-head">
+                                        <div class="about-list-count"><span>3</span></div>
+                                        <div class="about-list-name">Доставка</div>
+                                    </div>
+                                    <div class="about-list-desc">
+                                        Доставим товары в любой город Татарстана. Бесплатная доставка по 
+                                        Альметьевску при заказе от 1 500 руб., в любой другой город 
+                                        Татарстана от 15 000 руб.
+                                    </div>
+                                </div>
+                                <div class="about-list-item">
+                                    <div class="about-list-head">
+                                        <div class="about-list-count"><span>4</span></div>
+                                        <div class="about-list-name">Гарантия</div>
+                                    </div>
+                                    <div class="about-list-desc">
+                                        Бесплатная расширенная гарантия на 2 года при пользовании 
+                                        услугами нашего сервисного центра и при выполнении всех 
+                                        гарантийных обязательств.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-services section-services-about">
+        <div class="container">
+            <div class="section-heading heading-small">Последовательные услуги</div>
+
+            <div class="row row-services">
+                <div class="col-md-5">
+                    <div class="service-item">
+                        <div class="service-item-icon"><img src="images/services/1.svg" alt="Выезд специалиста и консультация" class="service-item-icon-src"></div>
+                        <div class="service-item-body">
+                            <div class="service-item-name"><b>1.</b> Выезд специалиста и консультация</div>
+                            <div class="service-item-text">
+                                Квалифицированный сотрудник компании EWA 
+                                systems бесплатно приедет к вам, чтобы оказать
+                                консультацию и провести визуальный осмотр.
+                                Наши специалисты постоянно проходят обучение.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="service-item">
+                        <div class="service-item-icon"><img src="images/services/4.svg" alt="Подбор системы очистки" class="service-item-icon-src"></div>
+                        <div class="service-item-body">
+                            <div class="service-item-name"><b>4.</b> Подбор системы очистки</div>
+                            <div class="service-item-text">
+                                В зависимости от того, наличие каких примесей в  воде покажет лабораторный 
+                                анализ, станет понятно, какие ступени она должна будет пройти при очистке. 
+                                Наши специалисты подберут оптимальный вариант исходя из показателя 
+                                исходной воды и характер объекта (жилой дом, коттедж, офис, предприятие, 
+                                склад). 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="service-item">
+                        <div class="service-item-icon"><img src="images/services/3.svg" alt="Все в одном месте" class="service-item-icon-src"></div>
+                        <div class="service-item-body">
+                            <div class="service-item-name"><b>2.</b> Все в одном месте</div>
+                            <div class="service-item-text">
+                                Комплексность подхода к реализации проекта 
+                                водоснабжения, канализации и отопления. Получите
+                                необходимые товары и услуги одним обращением.
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-7">
+                    <div class="service-item">
+                        <div class="service-item-icon"><img src="images/services/5.svg" alt="Монтаж" class="service-item-icon-src"></div>
+                        <div class="service-item-body">
+                            <div class="service-item-name"><b>5.</b> Монтаж</div>
+                            <div class="service-item-text">
+                                Сроки монтажа зависят от объема работ и, в среднем, составляют 8 часов. 
+                                Комплекс монтажных работ включает: монтаж водоочистительного оборудования 
+                                и его подключение к имеющимся на объекте инженерным коммуникациям 
+                                (водопроводной сети, канализационной сети, электрической сети); промывку 
+                                фильтров; тестирование системы на работоспособность; экспресс-анализ воды 
+                                на выходе. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="service-item">
+                        <div class="service-item-icon"><img src="images/services/3.svg" alt="Бесплатный анализ воды" class="service-item-icon-src"></div>
+                        <div class="service-item-body">
+                            <div class="service-item-name"><b>3.</b> Бесплатный анализ воды</div>
+                            <div class="service-item-text">
+                                Анализ включает в себя определение концентрации 
+                                железа и марганца, кислотность (рН), общую 
+                                жесткость, перманганатную окисляемость, 
+                                органолептические свойства.
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-7">
+                    <div class="service-item">
+                        <div class="service-item-icon"><img src="images/services/6.svg" alt="Сервисное обслуживание" class="service-item-icon-src"></div>
+                        <div class="service-item-body">
+                            <div class="service-item-name"><b>6.</b> Сервисное обслуживание</div>
+                            <div class="service-item-text">
+                                Предлагаем несколько вариантов для заключения договора на сервисное 
+                                обслуживание: разовое, годовое и обслуживание оборудования компаний.                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-consult">
+        <div class="container">
+            <div class="consult-content">
+                <div class="consult-heading">Консультация специалиста</div>
+
+                <div class="consult-desc">
+                    Квалифицированная помощь специалиста EWA systems по подбору <br>
+                    системы фильтрации для квартиры или дома.
+                </div>
+
+                <a href="javascript:void(0)" class="button-default button-active consult-btn">Получить</a>
+
+                <img src="images/consult-men.png" alt="" class="consult-men">
+            </div>
+        </div>
+    </div>
+
+    <div class="section-partners">
+        <div class="container">
+            <div class="slider-partners swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/partners/1.png" alt="" class="partner-logo"></div>
+                    <div class="swiper-slide"><img src="images/partners/2.png" alt="" class="partner-logo"></div>
+                    <div class="swiper-slide"><img src="images/partners/3.png" alt="" class="partner-logo"></div>
+                    <div class="swiper-slide"><img src="images/partners/4.png" alt="" class="partner-logo"></div>
+                    <div class="swiper-slide"><img src="images/partners/5.png" alt="" class="partner-logo"></div>
+                    <div class="swiper-slide"><img src="images/partners/6.png" alt="" class="partner-logo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <a class="footer-logo" href="/">
+                        <img class="footer-logo-src" src="images/ewa-logo.svg" alt="">
+                    </a>
+
+                    <div class="footer-desc">
+                        Интернет-магазин компании EWA systems <br>
+                        специализируется на продаже систем очистки воды <br>
+                        для квартиры, дома и бизнеса.
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-item footer-pin">
+                            Альметьевск, ул. Ю.Аминова, 20Г<br>
+                            ежедневно с 9:00 до 19:00
+                        </div>
+                        <div class="footer-contacts-item footer-phone">
+                            <a href="tel:88005118289" class="footer-link">8 800 511 82-89</a>
+                        </div>
+                        <div class="footer-contacts-item footer-email">
+                            <a href="mailto:info@ewasystems.com" class="footer-link">info@ewasystems.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-footer">
+                    <div class="footer-title">Каталог</div>
+
+                    <div class="footer-nav">
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Для дома</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Для квартиры</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Обратный осмос</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Фильтрующие материалы</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-footer">
+                    <div class="footer-title">Клиентам</div>
+
+                    <div class="footer-nav">
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">О компании</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Услуги</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Доставка и оплата</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Гарантия</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-footer">
+                    <div class="footer-title">&nbsp;</div>
+
+                    <div class="footer-nav">
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Вопросы и и ответы</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Контакты</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- custom scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
