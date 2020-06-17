@@ -745,9 +745,16 @@
 }
 
 @media (max-width: 767px) {
+    .contacts-form-faq {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     .faq-list-item::before {
-        top: 16px;
+        top: 19px;
         right: 19px;
+        width: 12px;
+        height: 12px;
     }
 
     .faq-list-item {
@@ -758,6 +765,14 @@
     .faq-list-item-head {
         padding-bottom: 13px;
         padding-right: 30px;
+    }
+
+    .faq-list-item-body {
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
     }
 
     .about-list-desc {
@@ -1083,9 +1098,29 @@
     .modal-custom-head {
         padding-right: 45px;
     }
+
+    .faq-list-item {
+        font-size: 14px;
+    }
+
+    .faq-list-item-body {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 480px) {
+    .product-tooltip {
+        font-size: 10px;
+    }
+
+    .section-recomms {
+        margin-top: 15px;
+    }
+
+    .contacts-form-style {
+        border-radius: 17px;
+    }
+
     .service-item {
         margin-bottom: 15px;
     }
@@ -1275,7 +1310,7 @@
     }
 
     .tooltip-small::before {
-        left: 33%;
+        left: 37%;
     }
 
     .about-podbor {

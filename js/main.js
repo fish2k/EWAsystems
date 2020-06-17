@@ -1,12 +1,13 @@
 $(document).ready(() => {
     // поiхали
 
-    var homeSlider,
-        homeSliderBlock = $("#homeslider"),
-        sliderShowMoreButton = $(".home-slider-more"),
-        burgerBtn = $(".header-burger"),
-        overlay = $(".overlay"),
-        body = $("body");
+    var detailSliderThumbs,
+        detailSliderID          = $("#detailSlider"),
+        homeSliderBlock         = $("#homeslider"),
+        sliderShowMoreButton    = $(".home-slider-more"),
+        burgerBtn               = $(".header-burger"),
+        overlay                 = $(".overlay"),
+        body                    = $("body");
 
     // МЕНЮ
     burgerBtn.on("click", function () {
@@ -16,82 +17,6 @@ $(document).ready(() => {
     // общий оверлэй
     overlay.on("click", function () {
         body.removeClass("state-menu");
-    });
-
-    // если слайдер имеется в DOM, то отрабатываем инициализацию
-    if ( homeSliderBlock.eq(0).is(":visible") ) {
-        homeSlider = new Swiper(".home-slider", {
-            slidesPerView: 1,
-            height: 600,
-    
-            on: {
-                init: function () {
-                    // отображаем слайдер при полной инициализации
-                    this.el.style.opacity = 1;
-                }
-            }
-        });
-
-        sliderShowMoreButton.on("click", function () {
-            var closeText = $(this).siblings(".home-slider-more-text");
-    
-            closeText.toggleClass("show");
-        });
-    }
-
-    var productSlider,
-        partnersSlider;
-
-    productSlider = new Swiper(".slider-products", {
-        loop: false,
-
-        navigation: {
-            prevEl: ".product-slider-prev",
-            nextEl: ".product-slider-next"
-        },
-
-        breakpoints: {
-            991: {
-                slidesPerView: 4,
-                spaceBetween: 30
-            },
-
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 0
-            },
-
-            320: {
-                slidesPerView: 2
-            }
-        }
-    });
-
-    partnersSlider = new Swiper(".slider-partners", {
-        slidesPerView: 6,
-        loop: false,
-
-        autoplay: {
-            delay: 3000
-        },
-
-        breakpoints: {
-            1200: {
-                slidesPerView: 6
-            },
-
-            991: {
-                slidesPerView: 4
-            },
-
-            768: {
-                slidesPerView: 3
-            },
-
-            320: {
-                slidesPerView: 2
-            }
-        }
     });
 
     // тултип на описание товара
@@ -134,12 +59,100 @@ $(document).ready(() => {
         )
     });
 
-    var detailSlider,
-        detailSliderThumbs,
-        detailSliderID = $("#detailSlider");
+    var faqItem = $(".faq-list-item");
+
+    // faq итемы, аля аккордион костыльный
+    faqItem.on("click", function () {
+        var th = $(this),
+            body = th.find(".faq-list-item-body");
+
+        faqItem.removeClass("active");
+        th.toggleClass("active");
+        $(".faq-list-item-body").slideUp();
+        body.stop().slideToggle();
+    });
+
+    // чистим форму во всех модалках
+    $(".modal").on("hide.bs.modal", function () {
+        $(this).find("form").get(0).reset();
+    });
+
+    // слайдеры
+    if ( homeSliderBlock.eq(0).is(":visible") ) {
+        var homeSlider = new Swiper(".home-slider", {
+            slidesPerView: 1,
+            height: 600,
+    
+            on: {
+                init: function () {
+                    // отображаем слайдер при полной инициализации
+                    this.el.style.opacity = 1;
+                }
+            }
+        });
+
+        sliderShowMoreButton.on("click", function () {
+            var closeText = $(this).siblings(".home-slider-more-text");
+    
+            closeText.toggleClass("show");
+        });
+    }
+
+    var productSlider = new Swiper(".slider-products", {
+        loop: false,
+
+        navigation: {
+            prevEl: ".product-slider-prev",
+            nextEl: ".product-slider-next"
+        },
+
+        breakpoints: {
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 0
+            },
+
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 0
+            }
+        }
+    });
+
+    var partnersSlider = new Swiper(".slider-partners", {
+        slidesPerView: 6,
+        loop: false,
+
+        autoplay: {
+            delay: 3000
+        },
+
+        breakpoints: {
+            1200: {
+                slidesPerView: 6
+            },
+
+            991: {
+                slidesPerView: 4
+            },
+
+            768: {
+                slidesPerView: 3
+            },
+
+            320: {
+                slidesPerView: 2
+            }
+        }
+    });
 
     if ( detailSliderID.eq(0).is(":visible") ) {
-        detailSliderThumbs = new Swiper(".detail-slider-thumbs", {
+        var detailSliderThumbs = new Swiper(".detail-slider-thumbs", {
             slidesPerView: 5,
             spaceBetween: 30,
             freeMode: true,
@@ -160,33 +173,12 @@ $(document).ready(() => {
             }
         });
 
-        detailSlider = new Swiper(".detail-slider", {
+        var detailSlider = new Swiper(".detail-slider", {
             slidesPerView: 1,
 
             thumbs: {
                 swiper: detailSliderThumbs
             }
         });
-
-        // detailSlider.controller.control = detailSliderThumbs;
-        // detailSliderThumbs.controller.control = detailSlider;
     }
-
-    var faqItem = $(".faq-list-item");
-
-    // faq итемы, аля аккордион костыльный
-    faqItem.on("click", function () {
-        var th = $(this),
-            body = th.find(".faq-list-item-body");
-
-        faqItem.removeClass("active");
-        th.toggleClass("active");
-        $(".faq-list-item-body").slideUp();
-        body.stop().slideToggle();
-    });
-
-    // чистим форму во всех модалках
-    $(".modal").on("hide.bs.modal", function () {
-        $(this).find("form").get(0).reset();
-    });
 });
