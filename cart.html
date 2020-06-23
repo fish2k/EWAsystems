@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EWA water system</title>
+
+    <!-- additional styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- common styles -->
+    <link rel="stylesheet" href="fonts/stolzl/stolzl.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="stylesheet" href="css/cart.css">
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row-header-top">
+                    <div class="header-top-list">
+                        <a href="javascript:void(0)" class="header-top-link">О компании</a>
+                        <a href="javascript:void(0)" class="header-top-link">Услуги</a>
+                        <a href="javascript:void(0)" class="header-top-link">Доставка и оплата</a>
+                        <a href="javascript:void(0)" class="header-top-link">Гарантия</a>
+                        <a href="javascript:void(0)" class="header-top-link">Вопросы и ответы</a>
+                        <a href="javascript:void(0)" class="header-top-link">Контакты</a>
+                    </div>
+    
+                    <div class="header-contacts">
+                        <a href="javascript:void(0)" class="header-contacts-item header-city">
+                            Альметьевск
+                        </a>
+                        <a href="tel:88005118289" class="header-contacts-item header-phone">
+                            8 800 511 82-89
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="row-header-main">
+                    <a href="/" class="header-logo">
+                        <img src="images/ewa-logo.svg" alt="EWA water system" class="header-logo-src">
+                    </a>
+
+                    <div class="header-main-list">
+                        <a href="javascript:void(0)" class="header-main-link">Для дома</a>
+                        <a href="javascript:void(0)" class="header-main-link">Для квартиры</a>
+                        <a href="javascript:void(0)" class="header-main-link">Обратный осмос</a>
+                        <a href="javascript:void(0)" class="header-main-link">Фильтрующие материалы</a>
+                        <a href="javascript:void(0)" class="header-main-link">Сопутствующие товары</a>
+                    </div>
+
+                    <!--
+                        Если в корзине нету товаров, то убираем класс cart-has-items
+                        и в header-cart-title ставим статичный текст "Корзина"
+                        блок header-cart-total может быть пустым,
+                        он всё равнон будет в display: none
+                    -->
+                    <a href="javascript:void(0)" class="header-cart cart-has-items">
+                        <div class="header-cart-icon">
+                            <img src="images/header-cart.svg" alt="Корзина">
+                        </div>
+                        <div class="header-cart-body">
+                            <div class="header-cart-title">15 товаров</div>
+                            <div class="header-cart-total">29 500 <span class="ruble">руб.</span></div>
+                        </div>
+                    </a>
+
+                    <div class="responsive-items">
+                        <a class="responsive-item header-cart-responsive" href="javascript:void(0)">
+                            <img src="images/header-cart.svg" alt="">
+                        </a>
+
+                        <div class="responsive-item header-burger">
+                            <span class="burger-line line-1"></span>
+                            <span class="burger-line line-2"></span>
+                            <span class="burger-line line-3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-layout">
+        <div class="page-bc">
+            <div class="container">
+                <div class="page-bc-list">
+                    <a href="javascript:void(0)" class="page-bc-link">Главная</a>
+                    <a href="javascript:void(0)" class="page-bc-link">Корзина</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-inner">
+            <div class="container">
+                <div class="section-heading">Заказ №156498</div>
+    
+                <div class="cart-layout">
+                    <div class="cart-row row">
+                        <div class="cart-content col-lg-9">
+                            <div class="cart-block">
+                                <div class="cart-table">
+                                    <div class="cart-table-product">
+                                        <div class="cart-table-product-item cart-table-item">
+                                            <a href="javascript:void(0)" class="cart-table-product-photo" style="background-image: url(images/cart-item.png);"></a>
+                                            <a href="javascript:void(0)" class="cart-table-product-name">Фильтр ПРОФИ Жесткость, Барьер</a>
+                                        </div>
+                                        <div class="cart-table-product-count cart-table-item">
+                                            <div class="cart-table-product-counter">
+                                                <div class="cart-counter-item">&ndash;</div>
+                                                <input class="cart-counter-item cart-counter-value" type="text" value="3">
+                                                <div class="cart-counter-item">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-table-product-price cart-table-item">
+                                            <div class="cart-table-product-prices">
+                                                <div class="cart-table-product-price-new">4 850 <span class="ruble">руб.</span></div>
+                                                <div class="cart-table-product-price-old">6 250 <span class="ruble">руб.</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-table-product-remove">
+                                            <img src="images/cart-remove.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cart-table-product">
+                                        <div class="cart-table-product-item cart-table-item">
+                                            <a href="javascript:void(0)" class="cart-table-product-photo" style="background-image: url(images/cart-item.png);"></a>
+                                            <a href="javascript:void(0)" class="cart-table-product-name">Фильтр ПРОФИ Жесткость, Барьер</a>
+                                        </div>
+                                        <div class="cart-table-product-count cart-table-item">
+                                            <div class="cart-table-product-counter">
+                                                <div class="cart-counter-item">&ndash;</div>
+                                                <input class="cart-counter-item cart-counter-value" type="text" value="3">
+                                                <div class="cart-counter-item">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-table-product-price cart-table-item">
+                                            <div class="cart-table-product-prices">
+                                                <div class="cart-table-product-price-new">4 850 <span class="ruble">руб.</span></div>
+                                                <div class="cart-table-product-price-old">6 250 <span class="ruble">руб.</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-table-product-remove">
+                                            <img src="images/cart-remove.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="cart-table-product">
+                                        <div class="cart-table-product-item cart-table-item">
+                                            <a href="javascript:void(0)" class="cart-table-product-photo" style="background-image: url(images/cart-item.png);"></a>
+                                            <a href="javascript:void(0)" class="cart-table-product-name">Фильтр ПРОФИ Жесткость, Барьер</a>
+                                        </div>
+                                        <div class="cart-table-product-count cart-table-item">
+                                            <div class="cart-table-product-counter">
+                                                <div class="cart-counter-item">&ndash;</div>
+                                                <input class="cart-counter-item cart-counter-value" type="text" value="3">
+                                                <div class="cart-counter-item">+</div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-table-product-price cart-table-item">
+                                            <div class="cart-table-product-prices">
+                                                <div class="cart-table-product-price-new">4 850 <span class="ruble">руб.</span></div>
+                                                <div class="cart-table-product-price-old">6 250 <span class="ruble">руб.</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-table-product-remove">
+                                            <img src="images/cart-remove.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-side col-lg-3">
+                            <div class="cart-block">
+                                <div class="cart-side-item">
+                                    <div class="cart-side-title">3 товара на сумму</div>
+                                    <div class="cart-side-body">6 250 <span class="ruble">руб.</span></div>
+                                </div>
+                                <div class="cart-side-item">
+                                    <div class="cart-side-title">Скидка</div>
+                                    <div class="cart-side-body">-2 250 <span class="ruble">руб.</span></div>
+                                </div>
+    
+                                <div class="cart-side-total">
+                                    <div class="cart-side-total-title">Итого</div>
+                                    <div class="cart-side-total-value">4 850 <span class="total-ruble">руб.</span></div>
+                                </div>
+    
+                                <a href="javascript:void(0)" class="button-default button-active cart-order-button">Оформить заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <form id="orderForm" class="cart-layout">
+                    <div class="cart-row row">
+                        <div class="cart-content col-lg-9">
+                            <div class="cart-block">
+                                <div class="cart-content-item">
+                                    <div class="cart-content-flex">
+                                        <div class="cart-content-title">Получение заказа</div>
+                                        <a href="javascript:void(0)" class="cart-content-city">Альметьевск</a>
+                                    </div>
+    
+                                    <div class="row-select-type row">
+                                        <div class="cart-col col-select-type">
+                                            <label class="cart-type-select">
+                                                <input class="cart-type-select-check" type="radio" name="select-something" checked>
+                                                <div class="cart-type-select-inner">
+                                                    <div class="cart-type-select-title">Самовывоз</div>
+                                                    <div class="cart-type-select-desc">Сегодня, бесплатно</div>
+                                                    <div class="cart-type-select-additional">
+                                                        Альметьевск <br>
+                                                        ул. Ю.Аминова, 20Г <br>
+                                                        до 19:00
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="cart-col col-select-type">
+                                            <label class="cart-type-select">
+                                                <input class="cart-type-select-check" type="radio" name="select-something">
+                                                <div class="cart-type-select-inner">
+                                                    <div class="cart-type-select-title">Доставка</div>
+                                                    <div class="cart-type-select-desc">С 19.06, бесплатно</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="select-list">
+                                        <label class="select-list-item">
+                                            <input class="select-list-input" type="radio" name="select-delivery" checked>
+                                            <div class="select-list-name">Доставка курьером магазина</div>
+                                        </label>
+                                        <label class="select-list-item">
+                                            <input class="select-list-input" type="radio" name="select-delivery" disabled>
+                                            <div class="select-list-name">
+                                                Доставка транспортной компанией до пункта выдачи
+                                                <span class="select-list-name-desc">Недоступно для города Альметьевск</span>
+                                            </div>
+                                        </label>
+                                    </div>
+    
+                                    <div class="deli-data">
+                                        <div class="deli-data-title">Адрес доставки</div>
+                                        <div class="row">
+                                            <div class="deli-data-col deli-data-address">
+                                                <input type="text" class="deli-data-style" placeholder="Улица, дом, квартира">
+                                            </div>
+                                            <div class="deli-data-col deli-data-date">
+                                                <div class="deli-data-style deli-data-pick">
+                                                    ВС, 19 июня
+                                                </div>
+                                            </div>
+                                            <div class="deli-data-col deli-data-time">
+                                                <div class="deli-data-style deli-data-pick">
+                                                    12:00 - 18:00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-content-item">
+                                    <div class="cart-content-flex">
+                                        <div class="cart-content-title">
+                                            Оплата заказа
+                                        </div>
+                                    </div>
+    
+                                    <div class="row-select-type row">
+                                        <div class="cart-col col-select-type">
+                                            <label class="cart-type-select">
+                                                <input class="cart-type-select-check" type="radio" name="select-something">
+                                                <div class="cart-type-select-inner">
+                                                    <div class="cart-type-select-title">При получении</div>
+                                                    <div class="cart-type-select-additional">Наличными или картой</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="cart-col col-select-type">
+                                            <label class="cart-type-select">
+                                                <input class="cart-type-select-check" type="radio" name="select-something" checked>
+                                                <div class="cart-type-select-inner">
+                                                    <div class="cart-type-select-title">Онлайн</div>
+                                                    <div class="cart-type-select-additional">
+                                                        Картами Visa, MasterCard, <br>
+                                                        Мир, электронными деньгами
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="cart-col col-select-type">
+                                            <label class="cart-type-select">
+                                                <input class="cart-type-select-check" type="radio" name="select-something">
+                                                <div class="cart-type-select-inner">
+                                                    <div class="cart-type-select-title">По расчетному счету</div>
+                                                    <div class="cart-type-select-additional">
+                                                        Для юридических и <br>
+                                                        физических лиц – ООО, ИП
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-content-item">
+                                    <div class="cart-content-flex">
+                                        <div class="cart-content-title">Данные получателя</div>
+                                    </div>
+    
+                                    <div class="order-info row">
+                                        <div class="order-info-col cart-col">
+                                            <input type="text" class="order-info-input" placeholder="Имя">
+                                        </div>
+                                        <div class="order-info-col cart-col">
+                                            <input type="text" class="order-info-input" placeholder="Телефон">
+                                        </div>
+                                        <div class="order-info-col cart-col">
+                                            <input type="text" class="order-info-input" placeholder="E-mail">
+                                        </div>
+                                        <div class="order-info-col cart-col-full">
+                                            <textarea rows="4" class="order-info-input" placeholder="Комментарий к заказу"></textarea>
+                                        </div>
+                                    </div>
+    
+                                    <div class="order-total-list">
+                                        <div class="order-total-item">
+                                            <span class="order-total-item-span order-total-item-left">Товары</span>
+                                            <span class="order-total-item-span order-total-item-right">4 850 <span>руб.</span></span>
+                                        </div>
+                                        <div class="order-total-item">
+                                            <span class="order-total-item-span order-total-item-left">Доставка</span>
+                                            <span class="order-total-item-span order-total-item-right">Бесплатно</span>
+                                        </div>
+                                        <div class="order-total-item">
+                                            <span class="order-total-item-span order-total-item-left">Итого к оплате</span>
+                                            <span class="order-total-item-span order-total-item-right">4 850 <span>руб.</span></span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="order-footer">
+                                        <button class="order-button button-default button-active" type="submit">Сделать заказ</button>
+                                        <div class="order-agree">
+                                            Нажав на кнопку “Сделать заказ”, вы даете согласие <br>
+                                            на обработку персональных данных.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-side cart-side-order col-lg-3">
+                            <div class="cart-block">
+                                <div class="cart-side-item">
+                                    <div class="cart-side-title">9 товаров на сумму</div>
+                                    <div class="cart-side-body">4 850 <span class="ruble">руб.</span></div>
+                                </div>
+                                <div class="cart-side-item">
+                                    <div class="cart-side-title">
+                                        Фильтр ПРОФИ Жесткость, 
+                                        Барьер — 4 850 руб. x 3 шт.
+                                    </div>
+                                </div>
+                                <div class="cart-side-item">
+                                    <div class="cart-side-title">
+                                        Фильтр ПРОФИ Жесткость, 
+                                        Барьер — 4 850 руб. x 3 шт.
+                                    </div>
+                                </div>
+                                <div class="cart-side-item">
+                                    <div class="cart-side-title">
+                                        Фильтр ПРОФИ Жесткость, 
+                                        Барьер — 4 850 руб. x 3 шт.
+                                    </div>
+                                </div>
+    
+                                <a href="javascript:void(0)" class="cart-side-link">Вернуться в корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+    
+                <div class="cart-layout">
+                    <div class="cart-row row">
+                        <div class="cart-content col-12">
+                            <div class="cart-block">
+                                <div class="row">
+                                    <div class="cart-success-col">
+                                        <div class="cart-content-item">
+                                            <div class="cart-content-flex">
+                                                <div class="cart-content-title">Заказ успешно оформлен и оплачен!</div>
+                                            </div>
+            
+                                            <div class="cart-success">
+                                                <div class="cart-success-item">
+                                                    <div class="cart-success-title">Детали заказа</div>
+                                                    <div class="cart-success-info">9 товаров на сумму 4 850 руб.</div>
+                                                    <div class="cart-success-list">
+                                                        <div class="cart-success-list-item">Фильтр ПРОФИ Жесткость, Барьер — 4 850 руб. x 3 шт.</div>
+                                                        <div class="cart-success-list-item">Фильтр ПРОФИ Жесткость, Барьер — 4 850 руб. x 3 шт.</div>
+                                                        <div class="cart-success-list-item">Фильтр ПРОФИ Жесткость, Барьер — 4 850 руб. x 3 шт.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-success-item">
+                                                    <div class="cart-success-title">Доставка</div>
+                                                    <div class="cart-success-info">Доставка курьером магазина</div>
+                                                    <div class="cart-success-list">
+                                                        <div class="cart-success-list-item">Адрес доставки: Альметьевск, Аминова, 20Г, 44</div>
+                                                        <div class="cart-success-list-item">Дата доставки: ВС, 19 июня, время доставки 12:00-18:00</div>
+                                                        <div class="cart-success-list-item">Получатель: Михаил, 89876543210</div>
+                                                        <div class="cart-success-list-item">Оплата: Онлайн</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-success-col">
+                                        <div class="cart-success-image">
+                                            <img src="images/cart-success.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <a class="footer-logo" href="/">
+                        <img class="footer-logo-src" src="images/ewa-logo.svg" alt="">
+                    </a>
+
+                    <div class="footer-desc">
+                        Интернет-магазин компании EWA systems <br>
+                        специализируется на продаже систем очистки воды <br>
+                        для квартиры, дома и бизнеса.
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-item footer-pin">
+                            Альметьевск, ул. Ю.Аминова, 20Г<br>
+                            ежедневно с 9:00 до 19:00
+                        </div>
+                        <div class="footer-contacts-item footer-phone">
+                            <a href="tel:88005118289" class="footer-link">8 800 511 82-89</a>
+                        </div>
+                        <div class="footer-contacts-item footer-email">
+                            <a href="mailto:info@ewasystems.com" class="footer-link">info@ewasystems.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-footer">
+                    <div class="footer-title">Каталог</div>
+
+                    <div class="footer-nav">
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Для дома</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Для квартиры</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Обратный осмос</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Фильтрующие материалы</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-footer">
+                    <div class="footer-title">Клиентам</div>
+
+                    <div class="footer-nav">
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">О компании</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Услуги</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Доставка и оплата</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Гарантия</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-footer">
+                    <div class="footer-title">&nbsp;</div>
+
+                    <div class="footer-nav">
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Вопросы и и ответы</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Контакты</a>
+                        </div>
+                        <div class="footer-nav-item">
+                            <a href="javascript:void(0)" class="footer-nav-link footer-link">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- custom scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
