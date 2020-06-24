@@ -34,6 +34,10 @@
     flex: 0 0 65px;
     max-width: 65px;
     padding-bottom: 65px;
+
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .cart-table-product-name {
@@ -564,4 +568,8 @@ textarea.order-info-input {
 
 .cart-inner {
     margin-bottom: 150px;
+}
+
+.cart-layout-abs {
+    position: relative;
 }

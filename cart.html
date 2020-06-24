@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/media.css">
 
     <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/cart_media.css">
 
     <!-- scripts -->
     <script src="js/jquery.min.js"></script>
@@ -106,9 +107,9 @@
 
         <div class="cart-inner">
             <div class="container">
-                <div class="section-heading">Заказ №156498</div>
+                <div class="section-heading">Корзина</div>
     
-                <div class="cart-layout">
+                <div class="cart-layout order-step-1">
                     <div class="cart-row row">
                         <div class="cart-content col-lg-9">
                             <div class="cart-block">
@@ -204,7 +205,7 @@
                     </div>
                 </div>
     
-                <form id="orderForm" class="cart-layout">
+                <form id="orderForm" class="cart-layout order-step-2" style="display: none">
                     <div class="cart-row row">
                         <div class="cart-content col-lg-9">
                             <div class="cart-block">
@@ -368,31 +369,31 @@
                                     <div class="cart-side-body">4 850 <span class="ruble">руб.</span></div>
                                 </div>
                                 <div class="cart-side-item">
-                                    <div class="cart-side-title">
+                                    <div class="cart-side-title cart-side-title-total">
                                         Фильтр ПРОФИ Жесткость, 
                                         Барьер — 4 850 руб. x 3 шт.
                                     </div>
                                 </div>
                                 <div class="cart-side-item">
-                                    <div class="cart-side-title">
+                                    <div class="cart-side-title cart-side-title-total">
                                         Фильтр ПРОФИ Жесткость, 
                                         Барьер — 4 850 руб. x 3 шт.
                                     </div>
                                 </div>
                                 <div class="cart-side-item">
-                                    <div class="cart-side-title">
+                                    <div class="cart-side-title cart-side-title-total">
                                         Фильтр ПРОФИ Жесткость, 
                                         Барьер — 4 850 руб. x 3 шт.
                                     </div>
                                 </div>
     
-                                <a href="javascript:void(0)" class="cart-side-link">Вернуться в корзину</a>
+                                <a href="javascript:void(0)" class="cart-side-link gotocart">Вернуться в корзину</a>
                             </div>
                         </div>
                     </div>
                 </form>
     
-                <div class="cart-layout">
+                <div class="cart-layout order-step-3" style="display: none">
                     <div class="cart-row row">
                         <div class="cart-content col-12">
                             <div class="cart-block">
@@ -526,5 +527,6 @@
 
     <!-- custom scripts -->
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>
