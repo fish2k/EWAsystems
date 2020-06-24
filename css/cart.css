@@ -105,6 +105,10 @@
     border: none;
 }
 
+.cart-counter-item:not(input) {
+    cursor: pointer;
+}
+
 .cart-table-product-prices {
     display: flex;
     flex-direction: column;
@@ -512,10 +516,8 @@ textarea.order-info-input {
 
 .order-footer {
     margin-top: 33px;
-}
-
-.order-footer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .order-agree {
@@ -523,6 +525,9 @@ textarea.order-info-input {
     color: var(--gray-text);
     font-size: 16px;
     font-weight: 300;
+
+    flex: 0 0 calc(100% - 201px);
+    max-width: calc(100% - 201px);
 }
 
 .cart-success {
@@ -572,4 +577,14 @@ textarea.order-info-input {
 
 .cart-layout-abs {
     position: relative;
+}
+
+.cart-side {
+    position: relative;
+}
+
+.cart-block-sticky {
+    position: sticky;
+    top: 15px;
+    left: 0;
 }
